@@ -1,0 +1,41 @@
+/* components/description/index.wxss */
+.container {
+  width: 750rpx;
+  height: 300rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+}
+
+.container > image {
+  margin-left: 20rpx;
+  flex-shrink:0;
+  width: 200rpx;
+  height: 280rpx;
+  border-radius: 5rpx;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+  height: 300rpx;
+  justify-content: space-around;
+}
+
+.title {
+  padding-top: 20rpx;
+  font-size: 32rpx;
+  color: #000;
+}
+
+.description {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.author {
+  font-size: 24rpx;
+  color: #ccc;
+}

@@ -1,0 +1,5 @@
+<!--components/book/index.wxml-->
+<view bind:longpress="onLongTap" class="container">
+  <image class="item" src="{{book.image}}" />
+  <text wx:if="{{!imageOnly}}" class="title">{{book.author}}</text>
+</view>

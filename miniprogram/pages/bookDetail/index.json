@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "book-cmp": "/components/book/index",
+    "button-cmp": "/components/button/index"
+  }
+}

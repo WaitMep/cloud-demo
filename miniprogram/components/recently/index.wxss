@@ -1,0 +1,47 @@
+/* components/recently/index.wxss */
+.container {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  width: 750rpx;
+  height: 100rpx;
+  justify-content: space-between;
+  align-content: center;
+}
+
+/* header */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20rpx;
+}
+
+.recently {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.title {
+  color: #bbb;
+  font-size: 30rpx;
+}
+
+.time {
+  color: #ccc;
+  font-size: 20rpx;
+}
+
+.chapter {
+  color: #545c6c;
+  font-size: 24rpx;
+  padding: 10rpx 0;
+}
+
+.arrow {
+  width: 40rpx;
+  padding-right: 20rpx;
+  line-height: 100rpx;
+}

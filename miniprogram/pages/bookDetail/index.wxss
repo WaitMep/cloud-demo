@@ -1,0 +1,41 @@
+/* miniprogram/pages/bookDetail/index.wxss */
+
+.container {
+}
+
+.header {
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  background: #666;
+}
+
+.book {
+  flex-shrink: 0;
+  padding: 10rpx 30rpx;
+}
+
+.bookInfo {
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 26rpx;
+  color: #fff;
+}
+
+.title {
+  margin-top: 40rpx;
+  font-size: 36rpx;
+}
+
+.author {
+}
+
+.state {
+}
+
+.btn {
+  width: 750rpx;
+  margin:20rpx 0;
+}

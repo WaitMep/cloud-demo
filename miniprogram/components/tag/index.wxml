@@ -1,0 +1,4 @@
+<view class="container" bind:tap="onTap">
+  <text class="content">{{content}}</text>
+  <slot name="number"></slot>
+</view>

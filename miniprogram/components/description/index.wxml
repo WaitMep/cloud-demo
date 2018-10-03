@@ -1,0 +1,9 @@
+<!--components/description/index.wxml-->
+<view class="container" bind:tap="onTap">
+  <image src="{{book.image}}" />
+  <view class="info">
+    <text class="title">{{book.title}}</text>
+    <text class="description">{{book.description}}</text>
+    <text class="author">{{book.author}}</text>
+  </view>
+</view>

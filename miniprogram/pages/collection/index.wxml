@@ -1,0 +1,19 @@
+<!--miniprogram/pages/collection/index.wxml-->
+
+<view class="fixBox">
+  <view class="searchBar" bind:tap="onSearch">
+    <image src="/images/search.png" />
+    <text>搜索书籍</text>
+  </view>
+</view>
+<view wx:if="{{!searching}}" class="container">
+  <recently-cmp />
+  <view class="tag">收藏的书籍</view>
+  <view class="booksWrap">
+    <block wx:for="{{books}}" wx:key="id">
+      <book-cmp index="{{index}}" book="{{item}}" bind:longTap="onLongTap" class="book" />
+    </block>
+    <add-book-cmp class="book" bind:addBook="onAddBook" />
+  </view>
+</view>
+<search-cmp bind:onNavigateTo="onNavigateTo" wx:else bind:cancel="onCancel" />

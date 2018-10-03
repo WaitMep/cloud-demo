@@ -1,0 +1,20 @@
+/* components/book/index.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.container  .item {
+  width: 200rpx;
+  height: 280rpx;
+  border-radius: 15rpx;
+}
+
+.container  .title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #bbb;
+  text-align: center;
+}

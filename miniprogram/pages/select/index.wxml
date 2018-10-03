@@ -1,0 +1,6 @@
+<!--miniprogram/pages/select/index.wxml-->
+<view class="container">
+  <block wx:for="{{recommendBooks}}" wx:key="id">
+    <description-cmp bind:onTap="onVisitDetail" class="book" book="{{item}}" />
+  </block>
+</view>

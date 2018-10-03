@@ -1,0 +1,4 @@
+<!--components/addBook/index.wxml-->
+<view class="container">
+  <image src="/images/add.png" bind:tap="addBook" />
+</view>

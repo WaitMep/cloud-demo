@@ -1,0 +1,38 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/collection/index",
+    "pages/index/index",
+    "pages/select/index",
+    "pages/bookDetail/index",
+    "pages/picture/index",
+    "pages/content/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/collection/index",
+        "text": "收藏"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/picture/index",
+        "text": "美图"
+      },
+      {
+        "pagePath": "pages/content/index",
+        "text": "搞笑"
+      }
+    ]
+  }
+}

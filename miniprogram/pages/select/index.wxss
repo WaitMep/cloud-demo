@@ -1,0 +1,8 @@
+/* miniprogram/pages/select/index.wxss */
+.container {
+  background: #f7f7f7;
+}
+
+.book {
+  margin: 20rpx;
+}

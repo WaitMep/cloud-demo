@@ -1,0 +1,67 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wx5d963100ff6e3d68",
+	"projectname": "%E4%BF%AE%E4%BB%99%E5%B0%8F%E8%AF%B4",
+	"libVersion": "2.2.5",
+	"compileType": "miniprogram",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "select",
+					"pathName": "pages/select/index",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "detail",
+					"pathName": "pages/bookDetail/index",
+					"query": "bid=1"
+				},
+				{
+					"id": 3,
+					"name": "pic",
+					"pathName": "pages/picture/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "content",
+					"pathName": "pages/content/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}

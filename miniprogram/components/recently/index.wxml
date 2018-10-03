@@ -1,0 +1,11 @@
+<!--components/recently/index.wxml-->
+<view class="container">
+  <view class="left">
+    <view class="recently">
+      <text class="title">《将夜》</text>
+      <text class="time">20小时前</text>
+    </view>
+    <text class="chapter">第四章 这是真的小说章节题目</text>
+  </view>
+  <view class="arrow">></view>
+</view>

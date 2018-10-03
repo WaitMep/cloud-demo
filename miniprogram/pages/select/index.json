@@ -1,0 +1,5 @@
+{
+  "usingComponents":{
+    "description-cmp": "/components/description/index"
+  }
+}

@@ -1,0 +1,5 @@
+<!--components/button/index.wxml-->
+<view class="container">
+  <view class="btn add" bind:tap="onAddBook">{{added?addedText:addText}}</view>
+  <view class="btn read" bind:tap="onRead">{{read?readingText:readText}}</view>
+</view>

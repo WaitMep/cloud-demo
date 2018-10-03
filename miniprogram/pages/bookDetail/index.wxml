@@ -1,0 +1,12 @@
+<!--miniprogram/pages/bookDetail/index.wxml-->
+<view class="container">
+  <view class="header">
+    <book-cmp imageOnly="{{true}}" book="{{book}}" class="book" />
+    <view class="bookInfo">
+      <text class="title">{{book.title}}</text>
+      <text class="author">作者：{{book.author}}</text>
+      <text class="state">状态：完结</text>
+    </view>
+  </view>
+  <button-cmp added="{{added}}" read="{{read}}" bind:onRead="onRead" bind:onAddBook="onAddBook" class="btn" />
+</view>

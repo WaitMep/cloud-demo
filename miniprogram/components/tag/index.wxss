@@ -1,0 +1,14 @@
+.container {
+  /* background: #b4430a; */
+  background: #f7f7f7;
+  display: inline-flex;
+  font-size: 24rpx;
+  padding: 10rpx;
+  margin: 5rpx;
+  border-radius: 10rpx;
+}
+
+.content {
+  color: #bbb;
+}
+

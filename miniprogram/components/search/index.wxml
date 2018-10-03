@@ -1,0 +1,35 @@
+<view class="search-bar">
+    <view class="input">
+      <image src="images/search.png" />
+      <input value="{{value}}" focus placeholder="书籍名" bind:confirm="onConfirm"></input>
+      <image src="images/delete.png" bind:tap="onDelete"/>
+    </view>
+    <text class="cancel" bind:tap="onCancel">取消</text>
+  </view>
+<view class="searching-container" wx:if="{{!searched}}">
+  <view>
+    <view class="history-hot-search">
+      <text class="title">历史搜索</text>
+      <view wx:if="{{historySearch.length}}" class="tags">
+        <block wx:for="{{historySearch}}" wx:key="id">
+          <tag-cmp bind:onTap="onConfirm" class="tag" content="{{item}}" />
+        </block>
+      </view>
+      <text wx:else class="empty">当前无搜索记录</text>
+    </view>
+    <view class="history-hot-search">
+      <text class="title">热门搜索</text>
+      <view wx:if="{{hotSearch.length}}" class="tags">
+        <block wx:for="{{hotSearch}}" wx:key="id">
+          <tag-cmp bind:onTap="onConfirm" class="tag" content="{{item}}" />
+        </block>
+      </view>
+      <text wx:else class="empty">当前无搜索记录</text>
+    </view>
+  </view>
+</view>
+<view class="booksWrap" wx:else>
+  <block wx:for="{{books}}" wx:key="item.id">
+    <description-cmp bind:onTap="onNavigateTo" class="book" book="{{item}}" />
+  </block>
+</view>

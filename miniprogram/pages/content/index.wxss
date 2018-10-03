@@ -1,0 +1,5 @@
+/* miniprogram/pages/content/index.wxss */
+video {
+  width: 750rpx;
+  height: 400rpx;
+}
