@@ -14,7 +14,7 @@ Page({
     loading: false,
     loadedImg:0
   },
-  // 已经加载完毕的图片大于5则隐藏loading
+  // 已经加载完毕的图片大于5则隐藏loading 
   A(event){
     this.data.loadedImg += 1
     if (this.data.loadedImg >= 5) {
