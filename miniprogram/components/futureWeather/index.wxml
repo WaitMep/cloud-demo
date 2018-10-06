@@ -1,0 +1,10 @@
+<!--components/wetherFuther/index.wxml-->
+<view class="container">
+  <view class="time">{{index!==0?future.date:'今天'}}</view>
+  <view class="weather-detail">
+    <image src="{{future.dayPictureUrl}}"></image>
+    {{future.weather}}
+    <image src="{{future.nightPictureUrl}}"></image>
+  </view>
+  <view class="temperature">{{future.temperature}}</view>
+</view>

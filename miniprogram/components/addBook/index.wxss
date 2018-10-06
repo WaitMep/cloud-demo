@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #bbb;
+  background: #dbdbdb;
   border-radius: 15rpx;
 }
 

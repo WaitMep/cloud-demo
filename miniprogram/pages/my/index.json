@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "nav-cmp": "/components/nav/index",
+    "open-data-cmp": "/components/openButton/index"
+  }
+}

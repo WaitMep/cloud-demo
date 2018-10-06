@@ -1,37 +1,41 @@
 {
   "cloud": true,
   "pages": [
-    "pages/collection/index",
-    "pages/index/index",
+    "pages/book/index",
     "pages/select/index",
     "pages/bookDetail/index",
     "pages/picture/index",
-    "pages/content/index"
+    "pages/my/index",
+    "pages/weather/index",
+    "pages/tips/index"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "宅逗趣",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#515151",
     "list": [
       {
-        "pagePath": "pages/collection/index",
-        "text": "收藏"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "搜索"
+        "pagePath": "pages/book/index",
+        "text": "小说",
+        "iconPath": "/images/book.png",
+        "selectedIconPath": "/images/book-hl.png"
       },
       {
         "pagePath": "pages/picture/index",
-        "text": "美图"
+        "text": "美图",
+        "iconPath": "/images/pic.png",
+        "selectedIconPath": "/images/pic-hl.png"
       },
       {
-        "pagePath": "pages/content/index",
-        "text": "搞笑"
+        "pagePath": "pages/my/index",
+        "text": "个人中心",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my-hl.png"
       }
     ]
   }

@@ -2,7 +2,7 @@
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -10,7 +10,7 @@
 	},
 	"appid": "wx5d963100ff6e3d68",
 	"projectname": "%E4%BF%AE%E4%BB%99%E5%B0%8F%E8%AF%B4",
-	"libVersion": "2.2.5",
+	"libVersion": "2.3.0",
 	"compileType": "miniprogram",
 	"condition": {
 		"search": {
@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -56,10 +56,21 @@
 					"query": ""
 				},
 				{
+					"id": 4,
+					"name": "content",
+					"pathName": "pages/my/index",
+					"query": ""
+				},
+				{
 					"id": -1,
 					"name": "content",
-					"pathName": "pages/content/index",
+					"pathName": "pages/weather/index",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tips",
+					"pathName": "pages/tips/index"
 				}
 			]
 		}

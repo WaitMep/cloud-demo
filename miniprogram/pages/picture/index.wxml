@@ -1,18 +1,19 @@
 <view class="container">
   <view class="img-container">
     <block wx:for="{{colLeft}}" wx:key="item.id">
-      <image bindload='A' src="{{item.url}}" mode="widthFix"></image>
+      <image bind:tap="onBigImages" bindload='A' id="{{item.id}}" src="{{item.url}}" mode="widthFix"></image>
     </block>
   </view>
   <view class="img-container">
     <block wx:for="{{colRight}}" wx:key="item.id">
-      <image bindload='A' src="{{item.url}}" mode="widthFix"></image>
+      <image bind:tap="onBigImages" bindload='A' id="{{item.id}}" src="{{item.url}}" mode="widthFix"></image>
     </block>
   </view>
 </view>
+
 <!-- 加载的图片 -->
 <view style='display:none;'>
   <block wx:for="{{pictures}}" wx:key="item.id">
-    <image bind:load="onLoadIamge" bind:error="onImageError" id="{{item.id}}" src="{{item.url}}" ></image>
+    <image bind:load="onLoadIamge" bind:error="onImageError" id="{{item.id}}" src="{{item.url}}"></image>
   </block>
 </view>

@@ -1,0 +1,113 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #7dc5eb;
+}
+
+.header {
+  padding-left: 30rpx;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-bottom: 20rpx;
+}
+.header > view {
+  padding-top: 20rpx;
+  font-size: 28rpx;
+}
+.tips {
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20rpx 0;
+  background: #fff;
+}
+
+.tips > .item{
+  width: 25%;
+  height: 187rpx;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.tips .item:nth-child(4n) {
+  border-right: none;
+}
+
+.tips .item:nth-child(5) {
+  border-bottom: none;
+}
+.tips .item:nth-child(6) {
+  border-bottom: none;
+}
+.tips .item:nth-child(7) {
+  border-bottom: none;
+}
+.tips .item:nth-child(8) {
+  border-bottom: none;
+}
+
+.tips image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.tips text {
+  color: #666;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+
+.city {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 24rpx;
+}
+.locatioon {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+
+.weather {
+  font-size: 28rpx;
+}
+
+.wind {
+  font-size: 24rpx;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.temperature > text {
+  font-size: 40px;
+}
+.temperature > image{
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: -30rpx;
+  left: 4rpx;
+}
+
+.provide {
+  text-align: center;
+  color: #f7f7f7;
+  font-size: 22rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}

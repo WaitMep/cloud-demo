@@ -1,0 +1,7 @@
+<view class="container">
+<slot name="before"></slot>
+  <button open-type="{{openType}}" plain="{{plain}}" bindgetuserinfo="onGetuserinfo" class="btn">
+    <slot name="inner"></slot>
+  </button>
+  <slot name="after"></slot>
+</view>

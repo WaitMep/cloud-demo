@@ -1,0 +1,11 @@
+<!--miniprogram/pages/tips/index.wxml-->
+<view class="container">
+<image src="/images/tip.png" />
+  <view class="title">{{title}}</view>
+  <view class="weather">
+  <view class="total">天气：{{weather}}</view>
+    <view class="temperature">温度：{{temperature}}</view>
+    <view class="wind">风向：{{wind}}</view>
+  </view>
+  <view class="desc">{{desc}}</view>
+</view>

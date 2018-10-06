@@ -1,12 +1,6 @@
-<!--miniprogram/pages/bookDetail/index.wxml-->
 <view class="container">
-  <view class="header">
-    <book-cmp imageOnly="{{true}}" book="{{book}}" class="book" />
-    <view class="bookInfo">
-      <text class="title">{{book.title}}</text>
-      <text class="author">作者：{{book.author}}</text>
-      <text class="state">状态：完结</text>
-    </view>
-  </view>
-  <button-cmp added="{{added}}" read="{{read}}" bind:onRead="onRead" bind:onAddBook="onAddBook" class="btn" />
+  <image src="/images/tip.png" class="tip" />
+  <view class="text"><text>1.非常感谢您的使用</text>
+  <text>2.小程序仅做个人案例演示，请支持原版小说</text>
+  <text>3.有问题可以加 qq:1291257532与我联系，谢谢</text></view> 
 </view>

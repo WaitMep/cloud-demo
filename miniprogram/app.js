@@ -1,4 +1,5 @@
 //app.js
+// ak = 'kTkcznxAXPMdphBGq2eel8tEQWT0nS1a'
 App({
   onLaunch: function () {
     

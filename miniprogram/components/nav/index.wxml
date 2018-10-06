@@ -1,0 +1,8 @@
+<!--components/nav/index.wxml-->
+<view class="container">
+  <view class="left">
+    <image class="icon" src="{{url}}"></image>
+    <text>{{text}}</text>
+  </view>
+  <image class="arrow" src="image/arrow.png" />
+</view>

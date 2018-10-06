@@ -1,3 +1,0 @@
-<!--miniprogram/pages/content/index.wxml-->
-<!-- <video src="{{src}}"></video> -->
-<text>{{text}}</text>

@@ -1,4 +1,3 @@
-// miniprogram/pages/select/index.js
 Page({
 
   /**
@@ -25,10 +24,8 @@ Page({
     })
   },
   onVisitDetail(event) {
-    const bid = event.detail.bid
-    console.log('visit', event.detail.bid)
     wx.navigateTo({
-      url: `../bookDetail/index?bid=${bid}`,
+      url: `../bookDetail/index`,
     })
   },
   _limit(str){
@@ -60,22 +57,11 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad (options) {
     this.loadData()
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
   },
 
   onReachBottom: function () {
     this.loadMore(this.data.recommendBooks.length)
   },
-  
-  onShareAppMessage: function () {
-
-  }
 })

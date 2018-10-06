@@ -1,0 +1,72 @@
+<view class="container">
+  <view class="header">
+    <view class="city">
+      <image src="/images/location.png" class="locatioon" />
+      <text>{{city}}</text>
+    </view>
+    <view class="date">日期：{{format.date(weatherDatas[0].date)}}</view>
+    <view class="temperature">
+      <text>{{format.temperature(weatherDatas[0].date)}}</text>
+      <image src="/images/temperature.png" />
+    </view>
+    <view class="weather">{{'天气：'+weatherDatas[0].weather}}</view>
+    <view class="wind">风向：{{weatherDatas[0].wind}}</view>
+  </view>
+  <view class="tips">
+    <view hover-class="hover" class="item" bind:tap="onTips" data-type="cloth">
+      <image src="/images/cloth.png" />
+      <text>穿衣指数</text>
+    </view>
+    <view hover-class="hover" class="item" bind:tap="onTips" data-type="car">
+      <image src="/images/car.png" />
+      <text>洗车指数</text>
+    </view>
+    <view hover-class="hover" class="item" bind:tap="onTips" data-type="fever">
+      <image src="/images/fever.png" />
+      <text>感冒指数</text>
+    </view>
+    <view hover-class="hover" class="item" bind:tap="onTips" data-type="play">
+      <image src="/images/play-out.png" />
+      <text>运动指数</text>
+    </view>
+    <view hover-class="hover" class="item" bind:tap="onTips" data-type="sun">
+      <image src="/images/sun.png" />
+      <text>紫外线强度</text>
+    </view>
+    <view class="item">
+    </view>
+    <view class="item">
+    </view>
+    <view class="item">
+    </view>
+  </view>
+  <view class="footer">
+    <block wx:for="{{weatherDatas}}" wx:key="id">
+      <weather-cmp index="{{index}}" future="{{item}}" />
+    </block>
+  </view>
+  <view class="provide">天气信息由百度天气提供</view>
+</view>
+
+<wxs module="format">
+  var date = function(str) {
+    if (str) {
+      var result = ''
+      result = str.slice(0, 2)
+      return result
+    }
+  }
+  var temperature = function(str) {
+    if (str) {
+      var result = ''
+      result = str.slice(-4, -2)
+      return result
+    }
+  }
+  module.exports = {
+    date: date,
+    temperature: temperature
+  }
+</wxs>
+
+<!-- 注意啦，在wxs中最好不要使用substr -->

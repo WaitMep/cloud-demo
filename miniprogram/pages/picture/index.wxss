@@ -5,6 +5,7 @@ image {
   padding: 10rpx;
   margin: 20rpx 10rpx;
   box-shadow: 0px 2px 2px rgba(34, 25, 25, 0.4);
+  /* transition: all 1s; */
 }
 
 .container {
@@ -12,9 +13,19 @@ image {
   flex-direction: row;
   background: #f7f7f7;
   justify-content: space-around;
+  transition: all 1s;
 }
 
 .img-container {
   display: flex;
   flex-direction: column;
+  /* transition: all 1s; */
 }
+
+.images-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+

@@ -1,0 +1,18 @@
+/* components/wetherFuther/index.wxss */
+
+.container {
+  margin: 20rpx 60rpx;
+  padding: 20rpx 0;
+  font-size: 32rpx;
+  color: #515151;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #dbdbdb;
+}
+
+image {
+  width: 40rpx;
+  height: 40rpx;
+}

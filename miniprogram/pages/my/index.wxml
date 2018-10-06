@@ -1,0 +1,22 @@
+<!--miniprogram/pages/my/index.wxml-->
+<view class="container">
+  <view class="header">
+    <image src="{{imageSrc}}" class="background" />
+    <!-- 用户授权前显示节点 -->
+    <open-data-cmp wx:if="{{!isAuthorized}}" open-type="getUserInfo" plain="true" bind:getuserinfo="onGetUserInfo" class="avatar">
+      <text slot="inner" class="click">
+          <text>click me</text>
+      </text>
+    </open-data-cmp>
+    <!-- 用户授权后显示用户头像 -->
+    <image wx:else src="{{userImg}}" class="avatar" />
+  </view>
+  <view class="main">
+    <nav-cmp bind:tap="onWeather" text="天气信息" url="/images/my-in1.png" class="nav-item" />
+    <nav-cmp bind:tap="onCollection" text="我的收藏" url="/images/my-in5.png" class="nav-item" />
+    <nav-cmp bind:tap="onSetting" text="设置" url="/images/my-in4.png" class="nav-item" />
+    <open-data-cmp open-type="share">
+      <nav-cmp slot="inner" text="推荐给好友" url="/images/my-in8.png" class="nav-item" />
+    </open-data-cmp>
+  </view>
+</view>

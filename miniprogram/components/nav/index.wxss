@@ -1,0 +1,32 @@
+/* components/nav/index.wxss */
+.container {
+  width: 750rpx;
+  height: 100rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+  border-top: 1rpx solid #ccc;
+}
+
+.left {
+  padding-left: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 32rpx;
+  color: #666;
+}
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  padding-right: 20rpx;
+}
+
+.arrow {
+  padding-right: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
