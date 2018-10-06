@@ -1,8 +1,0 @@
-{
-  "usingComponents": {
-    "search-cmp": "/components/search/index",
-    "recently-cmp": "/components/recently/index",
-    "add-book-cmp": "/components/addBook/index",
-    "book-cmp": "/components/book/index"
-  }
-}
